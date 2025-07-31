@@ -119,6 +119,65 @@ Inflection points are fascinating spots on a function's graph! They tell us wher
 </div>
 """)
 
+# --- New Section: Understanding Derivative Notation ---
+st.markdown("---")
+with st.expander("📚 Understanding Derivative Notation: A Quick Guide"):
+    st.markdown("""
+    In calculus, a **derivative** represents the instantaneous rate of change of a function. Think of it as how quickly a function's output changes with respect to its input at any given point. For instance, if a function describes your position over time, its derivative would describe your instantaneous speed.
+
+    There are several common notations used for derivatives, each with its own advantages and historical roots. The two most prevalent are **Leibniz's notation** and **Lagrange's notation**.
+
+    ### 1. First Derivative Notation
+
+    The first derivative tells us about the slope of the tangent line to a function's curve at any point. It indicates whether the function is increasing, decreasing, or at a local extremum (maximum or minimum).
+
+    * **Lagrange's Notation (Prime Notation):**
+        * **Symbol:** $f'(x)$
+        * **Read as:** "f prime of x"
+        * **Explanation:** This is the notation used in your "Calculus" program and is very common, especially when working with functions. The prime symbol (') indicates that it's the first derivative of the function $f(x)$ with respect to its independent variable (usually $x$). If your function is named $y$, you might see it written as $y'$.
+        * **Example:** If $f(x) = x^2$, then $f'(x) = 2x$.
+
+    * **Leibniz's Notation:**
+        * **Symbol:** $\frac{dy}{dx}$ or $\frac{df}{dx}$
+        * **Read as:** "dy dx", "df dx", or "the derivative of y with respect to x"
+        * **Explanation:** This notation, introduced by Gottfried Wilhelm Leibniz, emphasizes that the derivative is a ratio of infinitesimal changes. $dy$ represents an infinitesimal change in $y$, and $dx$ represents an infinitesimal change in $x$. It clearly indicates which variable is being differentiated with respect to. This is particularly useful in applications where the variables have specific meanings (e.g., $\frac{d(\text{position})}{d(\text{time})}$ for velocity).
+        * **Example:** If $y = x^2$, then $\frac{dy}{dx} = 2x$.
+
+    * **Euler's Notation:**
+        * **Symbol:** $D_x f$ or $D f$
+        * **Read as:** "D sub x of f" or "D of f"
+        * **Explanation:** This notation treats differentiation as an operator ($D_x$) acting on the function $f$. It's less common in introductory calculus but is used more in advanced contexts like differential equations.
+
+    ### 2. Second Derivative Notation
+
+    The second derivative tells us about the concavity of a function – whether its graph is curving upwards (concave up) or downwards (concave down). It also indicates the rate of change of the slope. For example, if the first derivative is velocity, the second derivative is acceleration.
+
+    * **Lagrange's Notation (Double Prime Notation):**
+        * **Symbol:** $f''(x)$
+        * **Read as:** "f double prime of x"
+        * **Explanation:** Similar to the first derivative, two prime symbols (") indicate that it's the second derivative of the function $f(x)$. If your function is $y$, you might see $y''$. This is the notation used in your current program.
+        * **Example:** If $f(x) = x^3$, then $f'(x) = 3x^2$, and $f''(x) = 6x$.
+
+    * **Leibniz's Notation:**
+        * **Symbol:** $\frac{d^2y}{dx^2}$ or $\frac{d^2f}{dx^2}$
+        * **Read as:** "d two y dx squared" or "the second derivative of y with respect to x"
+        * **Explanation:** This notation signifies that the differentiation operation has been applied twice. The $d^2$ indicates the second application of the differential operator to $y$, and $dx^2$ indicates that the differentiation is with respect to $x$ twice. It's important to note that $dx^2$ here does *not* mean $(dx)^2$.
+        * **Example:** If $y = x^3$, then $\frac{dy}{dx} = 3x^2$, and $\frac{d^2y}{dx^2} = 6x$.
+
+    * **Euler's Notation:**
+        * **Symbol:** $D_x^2 f$ or $D^2 f$
+        * **Read as:** "D sub x squared of f" or "D squared of f"
+        * **Explanation:** Again, this shows the operator $D_x$ applied twice to the function $f$.
+
+    ### Why Different Notations?
+
+    Each notation has its strengths:
+    * **Lagrange's notation ($f'(x)$, $f''(x)$)** is concise and excellent for showing the relationship between a function and its derivatives, especially when the independent variable is clear from context.
+    * **Leibniz's notation ($\frac{dy}{dx}$, $\frac{d^2y}{dx^2}$)** is powerful for emphasizing the variables involved and is very helpful in multivariable calculus or when performing implicit differentiation and chain rule applications.
+
+    Understanding these different symbols will help you read and interpret mathematical texts and problems more effectively as you continue your calculus journey!
+    """)
+
 # --- Footer ---
 st.markdown("---")
 st.markdown("""
